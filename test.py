@@ -22,7 +22,7 @@ video_test = os.path.join(data, 'video_init_5s.insv')
 
 
 def insv_to_equirect_frames(
-    insv, out_dir="C:/Users/ASUS/Desktop/01_master/00_m2/00_projetpro/00_data",
+    insv, out_dir=data,
         fps=5, fov=195,
     w=3840, h=1920, swap=False, fmt="png",):
 
@@ -54,7 +54,7 @@ def insv_to_equirect_frames(
         ["ffprobe", "-v", "error", "-select_streams", "v",
          "-show_entries", "stream=index,width,height",
          "-of", "json", insv],
-        capture_output=True, text=True, check=True,
+        capture_output=True, text=True, check=True
     )
     streams = json.loads(probe.stdout)["streams"]
     if len(streams) < 2:
@@ -74,7 +74,7 @@ def insv_to_equirect_frames(
         "-y", #écrase les fichiers si déjà existants !!
         "-i", insv,
         "-filter_complex", graph, "-map", "[out]",
-        str(out_dir / f"img_%05d.{fmt}"),
+        str(out_dir / f"img_%05d.{fmt}")
     ]
     subprocess.run(cmd, check=True)
 
