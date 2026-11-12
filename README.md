@@ -10,13 +10,16 @@ a la fin lol
 ### Contexte du besoin de l’entreprise : 
 
 <p align="justify"> 
-Modéliser le fonctionnement hydraulique d’un réseau d’assainissement. Pour cela, ouverture des regards, inspection des ouvrages et prise de cotation et vidéo de l’intérieur à l’aide d’une caméra 360° afin de reconstruire l’ouvrage en 3D et réaliser des produits dérivés.
+Soumise par HYDRACOS, filiale Suez, la demande première est d'assurer la modélisation du fonctionnement hydraulique d’un réseau d’assainissement. 
+Pour cela, l'entreprise s'occupe de l'ouverture des regards, de l'inspection des ouvrages et de la prise de cotations et vidéos de l’intérieur 
+de ces ouvrages à l’aide d’une caméra 360° afin de le reconstruire en 3D. Cette modélisation est au coeur d'une volonté 
+d'automatisation du processus, via l'utilisation de librairies ouvertes. 
 </p>
 
 ### Objectifs : 
 
-1. Produire un nuage de points 3D géoréférencé à partir des vidéos via un script python open source.
-2. A partir du nuage de points réaliser des produits dérivés : orthophoto, pdf…
+1. Production automatique d'un nuage de points géoréférencé à l'aide d'un processus basé sur un ensemble de scripts Python utilisant des librairies Open Source.
+2. Génération de produits dérivés (orthophotographie, PDF...)
 
 
 ## Données d'entrée
