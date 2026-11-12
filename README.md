@@ -28,6 +28,16 @@ Modéliser le fonctionnement hydraulique d’un réseau d’assainissement. Pour
 
 ## Données de sortie
 
+## Méthodologie
+
+### Démarche globale
+
+### Variables utilisateurs
+
+### Paramètres importants
+
+### Fonctions principales
+
 ## Annexes
 
 ### Collaborateurs
