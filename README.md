@@ -18,13 +18,11 @@ Modéliser le fonctionnement hydraulique d’un réseau d’assainissement. Pour
 1. Produire un nuage de points 3D géoréférencé à partir des vidéos via un script python open source.
 2. A partir du nuage de points réaliser des produits dérivés : orthophoto, pdf…
 
-### Données :
+
+## Données d'entrée
 
 - Vidéos Insta360 : .INSV (format brut à haute résolution et .LRV (format basse résolution, à utiliser pour les tests)
 - Points géoréférencés : coordonnées XYZ du centre du regard, au format .XLSX 
-
-
-## Données d'entrée
 
 ## Données de sortie
 
