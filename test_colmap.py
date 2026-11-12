@@ -8,13 +8,16 @@ from pathlib import Path
 os.environ["PATH"] += os.pathsep + r"C:/Users/ambri/anaconda3/envs/projet_hydracos/Library/bin"
 
 # Vues prises dans CHAQUE fisheye : nom -> (debut, fin) en degrés.
-# 12 vues
+# 12 vues --> passage en xx vues pour récupérer az manquant
+#param à tester ?
 VIEWS = {
-    "f":  (0,   0),  "fl": (-45, 0),  "fr": (45, 0),
-    "l":  (-90, 0),  "r":   (90, 0),
-    "bl": (-135, 0), "b":  (180, 0),  "br": (135, 0),
-    "u":  (0,  90),  "d":  (0, -90),
-    "ul": (-45, 45), "ur": (45, 45),
+    "f":   (0,    0), "fr":  (45,   0), "r":  (90,   0), "br":  (135,  0),
+    "b":   (180,  0), "bl":  (-135, 0), "l":  (-90,  0), "fl":  (-45,  0),
+    "uf":  (0,   45), "ufr": (45,  45), "ur": (90,  45), "ubr": (135, 45),
+    "ub":  (180, 45), "ubl": (-135, 45), "ul": (-90, 45), "ufl": (-45, 45),
+    "df":  (0,  -45), "dfr": (45, -45), "dr": (90, -45), "dbr": (135, -45),
+    "db":  (180, -45), "dbl": (-135, -45), "dl": (-90, -45), "dfl": (-45, -45),
+    "u":   (0,   90), "d":   (0,  -90)
 }
 
 
