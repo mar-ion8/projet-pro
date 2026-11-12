@@ -32,16 +32,19 @@ Modéliser le fonctionnement hydraulique d’un réseau d’assainissement. Pour
 
 ### Collaborateurs
 
-<u>Auteurs :</u>
+<p><u>Auteurs :</u></p>
+
 - Marion Bleuse (marion.bleuse8@gmail.com)
 - Maxime Gineste (ginestemax@gmail.com)
 - Ambrine Ortega (ambrineortega@gmail.com)
 
-<u>Encadrants universitaires :</u>
+<p><u>Encadrants universitaires :</u></p>
+
 - Théo Le Saint (theo.le-saint@univ-rennes2.fr) 
 - Laurence Hubert-Moy (laurence.moy@univ-rennes2.fr) 
 
-<u>Encadrant Hydracos :</u>
+<p><u>Encadrant Hydracos :</u></p>
+
 - Paul Vrchovsky (paul.vrchovsky@hydracos.fr)
 
 ### Sources
