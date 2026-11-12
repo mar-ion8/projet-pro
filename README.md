@@ -1,4 +1,7 @@
 # Fiche technique pour l'utilisation du processus de photogrammétrie
+<img src="assets/img/logo_hydracos.png" alt="logo_hydracos"/>
+<img src="assets/img/Logo_Institut_Agro_Rennes-Angers.png" alt="Logo_Institut_Agro_Rennes-Angers"/>
+<img src="assets/img/universite-rennes-2-350x0-c-default.png" alt="logo_universite-rennes-2"/>
 
 ## Table des matières
 
