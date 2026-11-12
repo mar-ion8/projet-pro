@@ -21,14 +21,24 @@ Modéliser le fonctionnement hydraulique d’un réseau d’assainissement. Pour
 
 ## Données d'entrée
 
-- Vidéos Insta360 : .INSV (format brut à haute résolution et .LRV (format basse résolution, à utiliser pour les tests)
-- Points géoréférencés : coordonnées XYZ du centre du regard, au format .XLSX 
+Le modèle prend deux données en entrée :
+- Vidéo Insta360 Dual FishEye, format .INSV (format brut à haute résolution) ; l'utilisateur doit s'assurer que la vidéo 
+englobe bien le moment où la caméra descend dans le regard et permet la visualisation complète et claire du support de cible, et
+le moment où la caméra s'arrête dans le fond du regard et permet d'identifier la longueur finale de la descente
+- Coordonnées X, Y et Z du centre du regard, format .XLSX (ou .CSV) ; celles-ci seront reprojetées en WGS84 [EPSG:4326] dans
+le processus
 
 ## Données de sortie
+
+La donnée principale produite par le modèle est le nuage de points géoréférencé, format .LAZ.
+L'utilisateur peut également choisir de générer un certain ensemble de données annexes, comme un fichier .PDF permettant
+d'obtenir une vue 2D du regard modélisé.
 
 ## Méthodologie
 
 ### Démarche globale
+
+insérer organigramme global 
 
 ### Variables utilisateurs
 
