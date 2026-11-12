@@ -20,6 +20,7 @@ os.environ["PATH"] += os.pathsep + r"C:/ffmpeg-9.0.2-essentials_build/bin" #!! Ã
 data = os.path.join('C:/Users/ASUS/Desktop/01_master/00_m2/00_projetpro/00_data')
 video_test = os.path.join(data, 'video_init_5s.insv')
 
+ 
 
 def insv_to_equirect_frames(
     insv, out_dir=data,
