@@ -27,5 +27,3 @@ Modéliser le fonctionnement hydraulique d’un réseau d’assainissement. Pour
 ## Données d'entrée
 
 ## Données de sortie
-
-<img src="assets/img/essai1.png" alt="essai_img"/>
