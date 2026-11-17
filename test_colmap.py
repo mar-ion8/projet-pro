@@ -10,18 +10,11 @@ os.environ["PATH"] += os.pathsep + r"C:/Users/ambri/anaconda3/envs/projet_hydrac
 # Vues prises dans CHAQUE fisheye : nom -> (debut, fin) en degrés.
 # 12 vues --> passage en xx vues pour récupérer az manquant
 #param à tester ?
-VIEWS = {
-    "f":   (0,    0), "fr":  (45,   0), "r":  (90,   0), "br":  (135,  0),
-    "b":   (180,  0), "bl":  (-135, 0), "l":  (-90,  0), "fl":  (-45,  0),
-    "uf":  (0,   45), "ufr": (45,  45), "ur": (90,  45), "ubr": (135, 45),
-    "ub":  (180, 45), "ubl": (-135, 45), "ul": (-90, 45), "ufl": (-45, 45),
-    "df":  (0,  -45), "dfr": (45, -45), "dr": (90, -45), "dbr": (135, -45),
-    "db":  (180, -45), "dbl": (-135, -45), "dl": (-90, -45), "dfl": (-45, -45),
-    "u":   (0,   90), "d":   (0,  -90)
-}
+VIEWS = {"c":   (0,    0), "l":  (-55,   0), "r":  (55,   0), "u":  (0,  55),
+    "d":   (0,  -55)}
 
 
-def insv_to_views(insv, out_dir, fps=10, fov=198.5, size=960):
+def insv_to_views(insv, out_dir, fps = 4, fov = 198.5, size=960):
     """
     Extrait des vues perspectives (sans distorsion) directement depuis les deux
     fisheyes d'un .insv, SANS recoller les deux objectifs : plus de couture,
@@ -99,7 +92,7 @@ def run_colmap(base, views = None, size=960):
         print("db.db existe : extraction sautée")
 
     # 2. mise en correspondance
-    pycolmap.match_exhaustive(db)
+    pycolmap.match_sequential(db)
 
     print("etape_6")
 
@@ -119,6 +112,6 @@ def run_colmap(base, views = None, size=960):
 
 ######A modifier pour lancer #####
 if __name__ == "__main__":
-    base = r"C:\Users\ambri\Desktop\Master TELENVI\S3\PPro\projet_pro_telenvi_donnees\COLMAP_TEST_3"
-    views = insv_to_views(base + "/DO-Blum-trim-5s.insv", base + "/views", fps=10)
+    base = r"C:\Users\ambri\Desktop\Master TELENVI\S3\PPro\projet_pro_telenvi_donnees\COLMAP_TEST_4"
+    views = insv_to_views(base + "/DO Blum.insv", base + "/views")
     run_colmap(base, views = views)
