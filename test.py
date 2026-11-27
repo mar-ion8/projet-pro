@@ -17,14 +17,14 @@ from pathlib import Path
 os.environ["PATH"] += os.pathsep + r"C:/ffmpeg-9.0.2-essentials_build/bin" #!! à changer : chemin qui pointe vers ffmpeg.exe
 
 #import des données
-data = os.path.join('C:/Users/ASUS/Desktop/01_master/00_m2/00_projetpro/00_data')
-video_test = os.path.join(data, 'video_init_5s.insv')
+data = os.path.join('C:/Users/ASUS/Desktop/01_master/00_m2/00_projetpro/00_data/projet_pro_telenvi_donnees/01_videos')
+video_test = os.path.join(data, 'DO Blum.insv')
 
  
 
 def insv_to_equirect_frames(
     insv, out_dir=data,
-        fps=5, fov=195,
+        fps=3, fov=190,
     w=3840, h=1920, swap=False, fmt="png",):
 
     """

@@ -126,6 +126,7 @@ def run_colmap(base, views, size=960, max_features=8192, peak=0.005):
     return maps
 
 
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--insv", required=True)
