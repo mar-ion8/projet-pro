@@ -43,9 +43,27 @@ d'obtenir une vue 2D du regard modélisé.
 
 insérer organigramme global 
 
+Premier nuage de points : très éparse, sert essentiellmeent à positionner les points prinicpaux par rapport au
+capteur
+--> ex plique pourquoi il y a peu de points à distance du cpateur 
+sur toute la vidéo : 12 heures
+
+Second nuage ed points : récupère et construit l'information pour densifier le nuage de points et recontituer
+le regard 
+
 ### Variables utilisateurs
 
+FPS : paramètre essentiel et à configurer par l'utilisateur dépendemment de la donnée d'entrée : 
+- vidéo courte, avec un capteur qui descend rapidement : FPS à augmenter (max : 5 ou 6)
+- vidéo longue, avec un capteur qui descend lentement : FPS à réduire (max : 2 ou 3)
+--> avoir un nombre élevé de FPS ne sert à rien si les frames couvrent la même information
+
 ### Paramètres importants
+
+Nombre de vues : 5 jeux suffisants
+FPS : pas la peine d'aller jusqu'à 10
+SIFTS : 
+rigs :
 
 ### Fonctions principales
 
